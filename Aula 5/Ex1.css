@@ -3,17 +3,37 @@
 
 		/* border: solid 1px black; */
 
-		font-family: Ebrima; 
+		font-family: Ebrima;
+
+	}
+
+	body {
+
+			margin: 0;
+
+			background-color: #e6f0e9;
 
 	}
 		
 	body > * {
 
-		margin-left: -.5em;
-
 		padding-top: 7em;
 
 	}
+
+	/* Título e texto */
+
+		.content {
+
+			text-align: center;
+
+		}
+
+		.content .title {
+
+			font-size: 30px;
+
+		}
 
 	/* Menu */
 
@@ -69,7 +89,9 @@
 
 			position: relative;
 
-			/* border: solid 1px black; */
+			padding-left: 2.5em;
+
+			/* border: solid 1px black; */ 
 
 		}
 
@@ -127,18 +149,6 @@
 
 	/* Video */
 
-		#video .content {
-
-			text-align: center;
-
-		}
-
-		#video .content .title {
-
-			font-size: 30px;
-
-		}
-
 		#video .media {
 
 			display: block;
@@ -153,12 +163,6 @@
 
 	/* Audio */
 
-		#audio .content {
-
-			text-align: center;
-
-		}
-
 		#audio .media {
 
 			border: solid 1px black;
@@ -169,8 +173,38 @@
 
 		}
 
-		#audio .content .title {
+	/* Tabela */
 
-			font-size: 30px;
+		.table {
+
+			margin-right: auto;
+
+			margin-left: auto;
+
+			margin-bottom: 3em;
+
+			border-collapse: collapse;
+
+			text-align: center;
+
+		}
+
+		.table .row:first-of-type {
+
+			background-color: black;
+
+			color: white;
+
+		}
+
+		.table, .row, .cell {
+
+			border: solid 1px black;
+
+		}
+
+		.table .row .cell {
+
+			padding: 3px;
 
 		}
