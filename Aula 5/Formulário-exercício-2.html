@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>
+
+			Formulário Exercício 2
+
+		</title>
+
+	</head>
+
+	<body>
+
+		<form id = "form" name = "form" method = "POST" action = "#" autocomplete = "on" >
+			
+			<fieldset id = "user-identification" >
+				
+				<legend>Identificação do Usuário</legend>
+
+				<p id = "name-input" >
+					
+					<label for = "name-id" >Nome*:</label><br>
+					<input type = "text" id = "name-id" name = "name" size = "25" maxlength = "25" placeholder = "Digite aqui..." title = "Digite seu nome" required autofocus >
+
+				</p>
+
+				<p id = "password-input" >
+					
+					<label for = "password-id" >Senha*:</label><br>
+					<input type = "password" id = "password-id" name = "password" size = "25" maxlength = "25" placeholder = "Digite aqui..." title = "Digite sua senha" required >
+
+				</p>
+
+				<p id = "cpf-input" >
+					
+					<label for = "cpf-id" >CPF*:</label><br>
+					<input type = "text" id = "cpf-id" name = "cpf" size = "25" maxlength = "11" placeholder = "Digite aqui..." title = "Digite seu CPF" required >
+
+				</p>
+
+				<p id = "sex-input" >
+
+					<p>
+						
+						Sexo*:
+
+					</p>
+					
+					<input type = "radio" id = "male-id" name = "sex" title = "Masculino"  value = "Masculino">
+					<label for = "male-id" >Masculino</label>
+
+					<input type = "radio" id = "female-id" name = "sex" title = "Feminino"  value = "Feminino">
+					<label for = "female-id" >Feminino</label>
+
+					<input type = "radio" id = "other-id" name = "sex" title = "Masculino"  value = "Outro" checked>
+					<label for = "other-id" >Outro</label>
+
+				</p>
+
+				<p id = "date-input" >
+					
+					<label for = "date-id" >Data de nascimento*:</label><br>
+					<input type = "date" id = "date-id" name = "date" title = "Selecione sua data de nascimento" required>
+
+				</p>
+
+				<p id = "marital-status">
+
+					<p>
+						
+						Estado civil*:
+
+					</p>
+						
+					<input type = "radio" id = "single-id" name = "marital-status" title = "Solteira" value = "Solteira" checked>
+					<label for = "single-id" >Solteira</label><br>
+
+					<input type = "radio" id = "married-id" name = "marital-status" title = "Casada" value = "Casada" >
+					<label for = "single-id" >Casada</label><br>
+
+					<input type = "radio" id = "divorced-id" name = "marital-status" title = "Divorciada" value = "Divorciada" >
+					<label for = "single-id" >Divorciada</label><br>
+
+					<input type = "radio" id = "widowed-id" name = "marital-status" title = "Viúva" value = "Viúva" >
+					<label for = "single-id" >Viúva</label>
+					
+				</p>
+
+				<p id = "schooling-level">
+
+					<label for = "schooling-level-id" >Escolaridade*:</label><br>
+					<select id = "schooling-level-id" name = "schooling-level">
+						
+						<option value = "elementary" >Ensino Fundamental</option>
+						<option value = "high" >Ensino Médio</option>
+						<option value = "college" >Ensino Superior</option>
+						
+					</select>
+
+				</p>
+
+				<p id = "ocupation" >
+				 	
+					<label for = "ocupation-id" >Ocupação Principal*:</label><br>
+					<input type = "text" id = "ocupation-id" name = "ocupation" size = "25" maxlength = "25" placeholder = "Digite aqui..." title = "Digite sua ocupação" required>
+					
+				</p>
+
+				<p id = "currency" >
+					
+					<label for = "currency-id" >Renda Mensal*:</label><br>
+					<input type = "number" id = "currency-id" name = "currency" size = "25" step = "any" placeholder = "Digite aqui..." title = "Digite sua renda mensal" required>
+
+				</p>
+
+				<p id = "dependents" >
+					
+					<label for = "dependents-id" >Número de dependentes*:</label><br>
+					<input type = "number" id = "dependents-id" name = "dependents" size = "25" maxlength = "25" placeholder = "Digite aqui..." title = "Digite seu número de dependentes" required>
+
+				</p>
+
+				<p id = "telefone">
+					
+					<label for = "telephone-id" >Telefone*:</label><br>
+					<input type = "tel" id = "telephone-id" name = "telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" size = "25" maxlength = "11" placeholder = "Digite aqui...." title = "Digite seu telefone" required >
+
+				</p>
+
+				<p id = "email" >
+					
+					<label for = "email-id" >Email*:</label><br>
+					<input type = "email" id = "email-id" name = "email" size = "25" maxlength = "50" placeholder = "Digite aqui..." title = "Digite seu e-mail" required>
+
+				</p>
+
+			</fieldset>
+
+			<fieldset id = "localization" >
+				
+				<legend>Localização</legend>
+
+				<p>
+					
+					<label for = "state-id">Estado*:</label><br>
+
+					<input type = "text" id = "state-id" name = "state" size = "25" placeholder = "Digite aqui..." title = "Digite seu estado" list = "states-id" required>
+
+					<datalist id = "states-id">
+						
+						<option value = "São Paulo" label = "São Paulo"></option>
+						<option value = "Santa Catarina" label = "Santa Catarina"></option>
+						<option value = "Paraná" label = "Paraná"></option>
+						
+
+					</datalist>
+
+				</p>
+
+				<p>
+					
+					<label for = "city-id">Cidade*:</label><br>
+
+					<input type = "text" id = "city-id" name = "city" size = "25" placeholder = "Digite aqui..." title = "Digite sua cidade" list = "cities-id" required>
+
+					<datalist id = "cities-id">
+						
+						<option value = "São Paulo" label = "São Paulo"></option>
+						<option value = "Florianópolis" label = "Florianópolis"></option>
+						<option value = "Curitiba" label = "Curitiba"></option>
+						
+
+					</datalist>
+
+				</p>		
+
+			</fieldset>
+
+			<fieldset id = "users-message" >
+				
+				<legend>Mensagem do Usuário</legend>
+
+				<p>
+					
+					<label for = "urgency-id" >Grau de Urgência*:</label> <br>
+
+					<input type = "text" id = "urgency-id" name = "urgency" size = "25" maxlength = "25" placeholder = "Digite aqui..." title = "Digite o grau de urgência" list = "urgency-list-id" required >
+
+					<datalist id = "urgency-list-id" >
+						
+						<option value = "Leve" label = "Leve" ></option>
+
+						<option value = "Médio" label = "Médio" ></option>
+
+						<option value = "Alto" label = "Alto" ></option>
+
+					</datalist>
+
+				</p>
+
+				<p>
+					
+					<label for = "users-message-id" >Mensagem*:</label><br>
+
+					<textarea id = "users-message-id" rows = "6" cols = "27" maxlength = "150"></textarea>
+
+				</p>
+
+				<p>
+					
+					<label for = "report-id" >Reportar erro:</label><br><br>
+
+					<input type = "file" id = "report-id" name = "report" value = "Escolher arquivo" >
+
+				</p>
+
+			</fieldset>
+
+			<input type = "submit" id = "submit-form-id" name = "submit-form" value = "Enviar tudo">
+
+			<input type = "reset" id = "reset-form-id" name = "reset form" value = "Limpar">
+
+		</form>
+
+	</body>
+
+</html>
